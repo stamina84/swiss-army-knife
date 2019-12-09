@@ -1,0 +1,35 @@
+name: SAK profile
+core: 8.x
+type: profile
+description: 'Custom profile'
+distribution:
+  name: HCG
+dependencies:
+  - drupal:admin_toolbar
+  - drupal:admin_toolbar_tools
+  - drupal:block
+  - drupal:block_content
+  - drupal:ckeditor
+  - drupal:comment
+  - drupal:config
+  - drupal:ctools
+  - drupal:field
+  - drupal:file
+  - drupal:image
+  - drupal:language
+  - drupal:link
+  - drupal:node
+  - drupal:options
+  - drupal:path
+  - drupal:system
+  - drupal:taxonomy
+  - drupal:text
+  - drupal:token
+  - drupal:toolbar
+  - drupal:update
+  - drupal:user
+  - drupal:pathauto
+  - drupal:views
+themes:
+  - bartik
+  - seven

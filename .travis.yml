@@ -1,0 +1,27 @@
+language: php
+dist: trusty
+
+cache:
+  directories:
+    - $HOME/.composer/cache/files
+
+services:
+  - docker
+
+php:
+  - 7.2
+
+env:
+  global:
+    - PATH="$PATH:$HOME/.composer/vendor/bin"
+
+before_install:
+  - echo 'sendmail_path = /bin/true' >> ~/.phpenv/versions/$(phpenv version-name)/etc/conf.d/travis.ini
+
+script:
+  - docker-compose --verbose pull --parallel
+  - docker-compose up -d
+  - docker-compose exec -T php composer global require hirak/prestissimo
+  - docker-compose exec -T php ./vendor/bin/phpcs --config-set installed_paths vendor/drupal/coder/coder_sniffer
+  - docker-compose exec -T php ./vendor/bin/phpcs --standard=Drupal --warning-severity=0 --ignore=themes/*/css profile
+  - docker-compose exec -T php ./vendor/bin/phpcs --standard=DrupalPractice --warning-severity=0 --ignore=themes/*/css profile
