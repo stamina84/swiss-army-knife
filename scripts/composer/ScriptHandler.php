@@ -108,14 +108,14 @@ class ScriptHandler {
     $fs = new ComposerFilesystem();
     $io = $event->getIO();
     $fileList = [
-      'notifyhcg.info.yml' => 'swiss_army_knife.info.yml',
-      'notifyhcg.profile' => 'swiss_army_knife.profile',
+      'swiss_army_knife.info.yml' => 'swiss_army_knife.info.yml',
+      'swiss_army_knife.profile' => 'swiss_army_knife.profile',
       'config' => 'config',
       'profile' . DIRECTORY_SEPARATOR . 'modules' => 'modules',
       'profile' . DIRECTORY_SEPARATOR . 'themes' => 'themes',
     ];
     $root = realpath($event->getComposer()->getPackage()->getDistUrl());
-    $path = $root . '/web/profiles/contrib/notifyhcg';
+    $path = $root . '/web/profiles/contrib/swiss_army_knife';
 
     try {
       foreach ($fileList as $orig_file => $file) {
