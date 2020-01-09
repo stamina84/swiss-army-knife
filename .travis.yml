@@ -27,4 +27,4 @@ script:
   - docker-compose exec -T php ./vendor/bin/phpcs --config-set installed_paths vendor/drupal/coder/coder_sniffer
   - docker-compose exec -T php ./vendor/bin/phpcs --standard=Drupal --warning-severity=0 --ignore=themes/*/css profile
   - docker-compose exec -T php ./vendor/bin/phpcs --standard=DrupalPractice --warning-severity=0 --ignore=themes/*/css profile
-  - ./drush.sh si swiss_army_knife -vvv -y --existing-config
+  - ./drush.sh si swiss_army_knife -vvv -y --existing-config --db-url=mysql://drupal:drupal@mariadb/drupal
