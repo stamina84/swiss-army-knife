@@ -25,7 +25,7 @@
         "drupal/adminimal_theme": "^1.5",
         "drupal/bootstrap_barrio": "^4.22",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.8",
+        "drupal/core": "^8.7",
         "drupal/pathauto": "^1.4",
         "drupal/publishcontent": "^1.1",
         "drupal/single_datetime": "^1.7",
