@@ -1,0 +1,66 @@
+uuid: faa0cc4c-4fc0-4611-a4eb-2a39e94ab61f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.remember.body
+    - field.field.node.remember.field_frequently_type
+    - field.field.node.remember.field_frequently_unit
+    - field.field.node.remember.field_last_update
+    - field.field.node.remember.field_remember_type
+    - node.type.remember
+  module:
+    - datetime
+    - options
+    - text
+    - user
+id: node.remember.default
+targetEntityType: node
+bundle: remember
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_frequently_type:
+    weight: 103
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  field_frequently_unit:
+    weight: 102
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_last_update:
+    weight: 105
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_remember_type:
+    weight: 104
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden: {  }
