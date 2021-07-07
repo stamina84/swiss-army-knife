@@ -1,0 +1,7 @@
+pfremember.update:
+  path: 'remember/update/{hash}'
+  defaults:
+    _controller: '\Drupal\pfremember\Controller\PfRememberUpdate::processHash'
+    _title: 'Update remember item'
+  requirements:
+    _access: 'TRUE'

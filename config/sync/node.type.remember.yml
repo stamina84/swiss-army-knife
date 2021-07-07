@@ -1,0 +1,17 @@
+uuid: 7d997fbd-8bc4-41e0-b97f-90f9513760f7
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: Remember
+type: remember
+description: ''
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false
