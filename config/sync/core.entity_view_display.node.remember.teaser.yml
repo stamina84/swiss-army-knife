@@ -1,0 +1,38 @@
+uuid: 06e69ccf-6342-4088-8058-5d63475001ed
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.remember.body
+    - field.field.node.remember.field_frequently_type
+    - field.field.node.remember.field_frequently_unit
+    - field.field.node.remember.field_last_update
+    - field.field.node.remember.field_remember_type
+    - node.type.remember
+  module:
+    - text
+    - user
+id: node.remember.teaser
+targetEntityType: node
+bundle: remember
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_frequently_type: true
+  field_frequently_unit: true
+  field_last_update: true
+  field_remember_type: true

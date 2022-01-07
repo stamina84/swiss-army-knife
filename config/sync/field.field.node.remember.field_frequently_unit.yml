@@ -1,0 +1,23 @@
+uuid: 10539ce9-9d7a-4420-bddf-86006b67bfcf
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_frequently_unit
+    - node.type.remember
+id: node.remember.field_frequently_unit
+field_name: field_frequently_unit
+entity_type: node
+bundle: remember
+label: 'Frequently unit'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer
