@@ -1,0 +1,21 @@
+uuid: 76de74cb-cf63-42b2-8004-849b396b0743
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_remember_type
+    - node.type.remember
+  module:
+    - options
+id: node.remember.field_remember_type
+field_name: field_remember_type
+entity_type: node
+bundle: remember
+label: 'Remember type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_integer
