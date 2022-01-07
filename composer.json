@@ -16,26 +16,22 @@
         }
     ],
     "require": {
-        "balbuf/drupal-libraries-installer": "^1.0",
         "composer/installers": "^1.2",
         "cweagans/composer-patches": "^1.6.5",
-        "drupal-composer/drupal-scaffold": "^2.6",
-        "drupal/admin_toolbar": "^1.27",
-        "drupal/admin_toolbar_tools": "^1.27",
-        "drupal/adminimal_theme": "^1.5",
-        "drupal/bootstrap_barrio": "^4.22",
+        "drupal/admin_toolbar": "^3.0",
+        "drupal/admin_toolbar_tools": "^3.0",
+        "drupal/adminimal_theme": "^1.6",
+        "drupal/bootstrap_barrio": "^5.5",
         "drupal/console": "^1.0.2",
-        "drupal/core": "^8.8",
-        "drupal/pathauto": "^1.4",
-        "drupal/publishcontent": "^1.1",
+        "drupal/core-composer-scaffold": "^9.3",
+        "drupal/core-recommended": "^9.3",
+        "drupal/pathauto": "^1.8",
+        "drupal/publishcontent": "^1.4",
         "drupal/single_datetime": "^1.7",
-        "drush/drush": "^9.0.0",
+        "drush/drush": "^10.6",
         "vlucas/phpdotenv": "^2.4",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
-    },
-    "require-dev": {
-        "webflo/drupal-core-require-dev": "^8.6.0"
     },
     "conflict": {
         "drupal/drupal": "*"
@@ -82,9 +78,8 @@
             "drush/Commands/{$name}": ["type:drupal-drush"]
         },
         "drupal-scaffold": {
-            "initial": {
-                ".editorconfig": "../.editorconfig",
-                ".gitattributes": "../.gitattributes"
+            "locations": {
+                "web-root": "web/"
             },
             "source": [
                 "https://raw.githubusercontent.com/drupal/drupal/{version}/{path}"
