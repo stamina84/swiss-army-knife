@@ -20,16 +20,16 @@
         "cweagans/composer-patches": "^1.6.5",
         "drupal/admin_toolbar": "^3.0",
         "drupal/admin_toolbar_tools": "^3.0",
-        "drupal/adminimal_theme": "^1.6",
         "drupal/bootstrap_barrio": "^5.5",
-        "drupal/console": "^1.0.2",
-        "drupal/core-composer-scaffold": "^9.3",
-        "drupal/core-recommended": "^9.3",
+        "drupal/ckeditor": "^1.0",
+        "drupal/core-composer-scaffold": "^10",
+        "drupal/core-project-message": "^10",
+        "drupal/core-recommended": "^10",
+        "drupal/datetime_flatpickr": "^3.0",
+        "drupal/gin": "^3.0@RC",
         "drupal/pathauto": "^1.8",
         "drupal/publishcontent": "^1.4",
-        "drupal/single_datetime": "^1.7",
-        "drush/drush": "^10.6",
-        "vlucas/phpdotenv": "^2.4",
+        "drush/drush": "^12",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },
@@ -39,13 +39,19 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "config": {
-        "sort-packages": true
-    },
-    "autoload": {
-        "classmap": [
-            "scripts/composer/ScriptHandler.php"
-        ],
-        "files": ["load.environment.php"]
+        "sort-packages": true,
+        "allow-plugins": {
+            "composer/installers": true,
+            "cweagans/composer-patches": true,
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "drupal/console-extend-plugin": true,
+            "drupal/core-composer-scaffold": true,
+            "drupal/core-project-message": true,
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true,
+            "tbachert/spi": true,
+            "zodiacmedia/drupal-libraries-installer": true
+        }
     },
     "scripts": {
         "pre-install-cmd": [
@@ -88,5 +94,8 @@
         "drupal-libraries": {
             "datetimepicker": "https://github.com/xdan/datetimepicker/archive/2.5.20.zip"
         }
+    },
+    "require-dev": {
+        "drupal/core-dev": "^10"
     }
 }

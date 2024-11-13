@@ -1,5 +1,5 @@
 name: SAK profile
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^9 || ^10
 type: profile
 description: 'Custom profile'
 distribution:
@@ -7,8 +7,6 @@ distribution:
 dependencies:
   - drupal:block
   - drupal:block_content
-  - drupal:ckeditor
-  - drupal:comment
   - drupal:config
   - drupal:field
   - drupal:file
@@ -25,5 +23,4 @@ dependencies:
   - drupal:user
   - drupal:views
 themes:
-  - bartik
-  - seven
+  - claro
