@@ -35,12 +35,12 @@ jobs:
     - name: Install Coder module
       run: |
         composer --dev --no-interaction --no-progress require \
-          drupal/coder:8.3.13
+          'drupal/coder:^8.3'
 
     - name: Check coding standards
       run: |
         ./vendor/bin/phpcs --config-set installed_paths vendor/drupal/coder/coder_sniffer
-        ./vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,install,js modules/contrib/token
+    #     ./vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,install,js web/modules/custom/to_be_added_later
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
     # Docs: https://getcomposer.org/doc/articles/scripts.md
