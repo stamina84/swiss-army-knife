@@ -32,14 +32,11 @@ jobs:
     - name: Install dependencies
       run: composer install --prefer-dist --no-progress
 
-    - name: Install Coder module
-      run: |
-        composer --dev --no-interaction --no-progress require \
-          'drupal/coder:^8.3'
-
     - name: Check coding standards
       run: |
         ./vendor/bin/phpcs --config-set installed_paths vendor/drupal/coder/coder_sniffer
+        rm -rf vendor/squizlabs/php_codesniffer
+        composer install --prefer-dist --no-progress
         ./vendor/bin/phpcs --standard=Drupal,DrupalPractice --extensions=php,module,install,js profile/modules/pfremember
 
     # Add a test script to composer.json, for instance: "test": "vendor/bin/phpunit"
