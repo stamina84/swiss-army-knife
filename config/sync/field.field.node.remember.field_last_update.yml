@@ -1,0 +1,21 @@
+uuid: 35616b79-f8d9-48fb-a37f-e3de12485089
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_last_update
+    - node.type.remember
+  module:
+    - datetime
+id: node.remember.field_last_update
+field_name: field_last_update
+entity_type: node
+bundle: remember
+label: 'Last update'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime
