@@ -1,7 +1,5 @@
 name: Remember
 description: Allow to create custom email remember
-core_version_requirement: ^8.8 || ^9
+core_version_requirement: ^9 || ^10
 package: pfNET
 type: module
-
-version: "8.x-1.0-alpha"
