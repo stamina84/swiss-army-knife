@@ -2,8 +2,8 @@ _core:
   default_config_hash: l58O_yEXSo-SeJi19LXdzTU1tNJG3lmnIhCitRkM1tk
 langcode: en
 uuid: b6574f95-d3a0-4a19-a972-39ffc247419c
-name: Drupal
-mail: ''
+name: 'SAK site'
+mail: sak@example.com
 slogan: ''
 page:
   403: ''
