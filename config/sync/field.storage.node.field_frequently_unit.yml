@@ -1,0 +1,20 @@
+uuid: 870bc789-5fbc-4150-941f-4e2403f1a27c
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_frequently_unit
+field_name: field_frequently_unit
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

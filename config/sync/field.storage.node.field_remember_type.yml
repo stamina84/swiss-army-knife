@@ -1,0 +1,30 @@
+uuid: 2af8587c-6092-4ab0-9d51-cf2678c3c426
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - options
+id: node.field_remember_type
+field_name: field_remember_type
+entity_type: node
+type: list_integer
+settings:
+  allowed_values:
+    -
+      value: 1
+      label: 'Napi egyszer'
+    -
+      value: 2
+      label: 'Délutántól folyamatosan'
+    -
+      value: 3
+      label: Folyamatosan
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

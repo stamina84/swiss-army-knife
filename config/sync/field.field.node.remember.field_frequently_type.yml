@@ -1,0 +1,21 @@
+uuid: dd85f8ef-2b6f-423e-84de-3503be6e6cd5
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_frequently_type
+    - node.type.remember
+  module:
+    - options
+id: node.remember.field_frequently_type
+field_name: field_frequently_type
+entity_type: node
+bundle: remember
+label: 'Frequently type'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: list_string
